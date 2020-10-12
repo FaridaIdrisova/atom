@@ -26,9 +26,9 @@ public class Util {
      */
     public static int max(int[] values) {
         int max = values[0];
-        for(int i = 1; i < values.length; i++){
-            if(values[i]>max){
-                max=values[i];
+        for (int i = 1; i < values.length; i++) {
+            if (values[i] > max) {
+                max = values[i];
             }
         }
 
@@ -43,8 +43,8 @@ public class Util {
      */
     public static long sum(int[] values) {
         long sum = 0;
-        for(int i = 0; i < values.length; i++){
-            sum+=values[i];
+        for (int i = 0; i < values.length; i++) {
+            sum += values[i];
         }
 
         return sum;
