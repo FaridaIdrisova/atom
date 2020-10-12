@@ -6,10 +6,10 @@ public class Bar implements Collider {
     private Point point2;
 
     private boolean isPointInsideBar(Point point, Bar bar) {
-        int x = point.getX();
-        int y = point.getY();
+        int xPoint = point.getX();
+        int yPoint = point.getY();
 
-        return x >= bar.point1.getX() && y >= bar.point1.getY() && x <= bar.point2.getX() && y <= bar.point2.getY();
+        return xPoint >= bar.point1.getX() && yPoint >= bar.point1.getY() && xPoint <= bar.point2.getX() && yPoint <= bar.point2.getY();
     }
 
     private void setupPoints() {
