@@ -12,7 +12,7 @@ public class Bar implements Collider {
         return x >= bar.point1.getX() && y >= bar.point1.getY() && x <= bar.point2.getX() && y <= bar.point2.getY();
     }
 
-    private void SetupPoints() {
+    private void setupPoints() {
         if (this.point1.getX() > this.point2.getX()) {
             int tmp = this.point1.getX();
             this.point1.setX(this.point2.getX());
@@ -30,7 +30,7 @@ public class Bar implements Collider {
         this.point1 = new Point(xTop, yTop);
         this.point2 = new Point(xBottom, yBottom);
 
-        this.SetupPoints();
+        this.setupPoints();
     }
 
     @Override

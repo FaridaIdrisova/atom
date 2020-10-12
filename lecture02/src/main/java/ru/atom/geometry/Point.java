@@ -5,29 +5,29 @@ package ru.atom.geometry;
  */
 public class Point implements Collider /* super class and interfaces here if necessary */ {
     public Point(int x, int y) {
-        this.X = x;
-        this.Y = y;
+        this.x = x;
+        this.y = y;
     }
 
     // fields
     // and methods
-    public int X;
-    public int Y;
+    public int x;
+    public int y;
 
     public void setX(int x) {
-        this.X = x;
+        this.x = x;
     }
 
     public void setY(int y) {
-        this.Y = y;
+        this.y = y;
     }
 
     public int getX() {
-        return X;
+        return x;
     }
 
     public int getY() {
-        return Y;
+        return y;
     }
 
     /**
@@ -43,7 +43,7 @@ public class Point implements Collider /* super class and interfaces here if nec
         Point point = (Point) o;
 
         // your code here
-        if (this.X == point.X && this.Y == point.Y) {
+        if (this.x == point.x && this.y == point.y) {
             return true;
         }
 
