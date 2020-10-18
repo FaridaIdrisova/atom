@@ -1,4 +1,8 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -28,7 +32,8 @@ public class BullsAndCows {
         while (triesLeft > 0) {
             String wordByUser = reader.readLine().toLowerCase();
             if (wordByUser.length() != keyWord.length()) {
-                System.out.println("Incorrect word length (" + wordByUser.length() + "), it should be " + keyWord.length());
+                System.out.println("Incorrect word length (" + wordByUser.length() +
+                        "), it should be " + keyWord.length());
             }
             if (wordByUser.equals(keyWord)) {
                 isWon = true;
