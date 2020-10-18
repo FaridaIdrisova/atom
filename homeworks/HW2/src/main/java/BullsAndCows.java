@@ -15,7 +15,7 @@ public class BullsAndCows {
     }
 
     public static boolean startGame() throws IOException {
-        ArrayList<String> dictionary = getDictionary("src\\main\\resources\\dictionary.txt");
+        ArrayList<String> dictionary = getDictionary("dictionary.txt");
         String keyWord = getAnyItem(dictionary).toLowerCase();
 
         int triesLeft = 10;

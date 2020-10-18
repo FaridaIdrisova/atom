@@ -1,4 +1,5 @@
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -48,13 +49,13 @@ public class GameUnitTests {
     @Test
     public void GetDataFromDictionaryTest() {
         ArrayList<String> expectedDictionary = new ArrayList<String>();
-        expectedDictionary.add("Hello");
-        expectedDictionary.add("dear");
-        expectedDictionary.add("world");
-        expectedDictionary.add("elephant");
-        expectedDictionary.add("kitchen");
+        expectedDictionary.add("aahed");
+        expectedDictionary.add("aahing");
+        expectedDictionary.add("aahs");
+        expectedDictionary.add("aalii");
+        expectedDictionary.add("aaliis");
 
-        ArrayList<String> actualDictionary = BullsAndCows.getDictionary("src\\test\\resources\\dictionaryTest.txt");
+        ArrayList<String> actualDictionary = BullsAndCows.getDictionary("dictionary.txt");
 
         for (int i = 0; i < expectedDictionary.size(); i++){
             assertEquals(expectedDictionary.get(i), actualDictionary.get(i));
