@@ -56,7 +56,6 @@ public class GameUnitTests {
 
         ArrayList<String> actualDictionary = BullsAndCows.getDictionary("src\\test\\resources\\dictionaryTest.txt");
 
-        Assert.assertEquals(expectedDictionary, actualDictionary);
-
+        assertEquals(expectedDictionary, actualDictionary);
     }
 }
