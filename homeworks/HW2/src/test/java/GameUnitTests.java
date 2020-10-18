@@ -8,7 +8,7 @@ import static junit.framework.Assert.assertEquals;
 
 public class GameUnitTests {
     @Test
-    public void GetBullsAndCowsTest() {
+    public void getBullsAndCowsTest() {
         String keyWord = "java";
         String wordByUser = "atom";
 
@@ -21,7 +21,7 @@ public class GameUnitTests {
     }
 
     @Test
-    public void GetBullsAndCowsTest2() {
+    public void getBullsAndCowsTest2() {
         String keyWord = "java";
         String wordByUser = "lava";
 
@@ -34,7 +34,7 @@ public class GameUnitTests {
     }
 
     @Test
-    public void GetBullsAndCowsTest3() {
+    public void getBullsAndCowsTest3() {
         String keyWord = "java";
         String wordByUser = "java";
 
@@ -47,7 +47,7 @@ public class GameUnitTests {
     }
 
     @Test
-    public void GetDataFromDictionaryTest() {
+    public void getDataFromDictionaryTest() {
         ArrayList<String> expectedDictionary = new ArrayList<String>();
         expectedDictionary.add("aahed");
         expectedDictionary.add("aahing");
@@ -57,7 +57,7 @@ public class GameUnitTests {
 
         ArrayList<String> actualDictionary = BullsAndCows.getDictionary("dictionary.txt");
 
-        for (int i = 0; i < expectedDictionary.size(); i++){
+        for (int i = 0; i < expectedDictionary.size(); i++) {
             assertEquals(expectedDictionary.get(i), actualDictionary.get(i));
         }
     }
