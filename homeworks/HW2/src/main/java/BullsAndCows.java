@@ -93,6 +93,6 @@ public class BullsAndCows {
             }
         }
 
-        return new int[]{ bulls, cows };
+        return new int[]{bulls, cows};
     }
 }
