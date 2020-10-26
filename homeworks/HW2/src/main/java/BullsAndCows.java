@@ -6,9 +6,12 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
+import org.slf4j.LoggerFactory;
 
 public class BullsAndCows {
+    private static final org.slf4j.Logger log = LoggerFactory.getLogger(BullsAndCows.class);
     public static void main(String[] args) throws IOException {
+        log.info("Логгер работает!");
         while (true) {
             boolean isTryAgain = startGame();
 
@@ -21,6 +24,7 @@ public class BullsAndCows {
     public static boolean startGame() throws IOException {
         ArrayList<String> dictionary = getDictionary("dictionary.txt");
         String keyWord = getAnyItem(dictionary).toLowerCase();
+        log.info("Key word is: " + keyWord);
 
         int triesLeft = 10;
         boolean isWon = false;
@@ -31,6 +35,8 @@ public class BullsAndCows {
 
         while (triesLeft > 0) {
             String wordByUser = reader.readLine().toLowerCase();
+            log.info("User typed: " + wordByUser);
+
             if (wordByUser.length() != keyWord.length()) {
                 System.out.println("Incorrect word length (" + wordByUser.length() +
                         "), it should be " + keyWord.length());

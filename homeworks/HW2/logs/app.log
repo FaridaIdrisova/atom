@@ -1,0 +1,6 @@
+2020-10-26 12:36:55.402 INFO [main] [BullsAndCows] [main] [BullsAndCows.main(BullsAndCows.java:14)] - Логгер работает!
+2020-10-26 12:38:01.098 INFO [main] [BullsAndCows] [main] [BullsAndCows.main(BullsAndCows.java:14)] - Логгер работает!
+2020-10-26 12:38:01.182 INFO [main] [BullsAndCows] [startGame] [BullsAndCows.startGame(BullsAndCows.java:27)] - Key word isfiord
+2020-10-26 12:39:27.306 INFO [main] [BullsAndCows] [main] [BullsAndCows.main(BullsAndCows.java:14)] - Логгер работает!
+2020-10-26 12:39:27.390 INFO [main] [BullsAndCows] [startGame] [BullsAndCows.startGame(BullsAndCows.java:27)] - Key word is: nova
+2020-10-26 12:39:36.922 INFO [main] [BullsAndCows] [startGame] [BullsAndCows.startGame(BullsAndCows.java:38)] - User typed: avon
