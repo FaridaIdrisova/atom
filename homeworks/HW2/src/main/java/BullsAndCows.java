@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 
 public class BullsAndCows {
     private static final org.slf4j.Logger log = LoggerFactory.getLogger(BullsAndCows.class);
+
     public static void main(String[] args) throws IOException {
         log.info("Логгер работает!");
         while (true) {
