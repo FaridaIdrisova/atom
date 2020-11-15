@@ -1,25 +1,25 @@
 package ru.atom.chat.server;
 
 public class ChatMessage {
-    private String Message;
-    private String Sender;
-    private String Recipient;
+    private String message;
+    private String sender;
+    private String recipient;
 
     public ChatMessage(String message, String sender, String recipient) {
-        this.Message = message;
-        this.Sender = sender;
-        this.Recipient = recipient;
+        this.message = message;
+        this.sender = sender;
+        this.recipient = recipient;
     }
 
     public String getMessage() {
-        return this.Message;
+        return this.message;
     }
 
     public String getSender() {
-        return this.Sender;
+        return this.sender;
     }
 
     public String getRecipient() {
-        return this.Recipient;
+        return this.recipient;
     }
 }
